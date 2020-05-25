@@ -21,7 +21,7 @@ read -p "Your current MFA setting is disabled, please type yes to enable it: " m
         then
         openssl prime -generate -bits 19 > .otp-number
         otp=`cat .otp-number`
-        echo "Here is your OTP $otp" | mail -s "OTP Validation" hkodamunja@salesforce.com
+        echo "Here is your OTP $otp" | mail -s "OTP Validation" harish09457@gmail.com
         read -p "Enter your otp number: " otp_num
                 if [ $otp_num -eq $otp ]
                 then
